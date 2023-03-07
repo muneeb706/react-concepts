@@ -1,11 +1,13 @@
 import './App.css';
-import React from 'react'
+import React, {Suspense} from 'react'
 const About = React.lazy(() => import('./About'));
 
 function App() {
   return (
     <div className="App">
-      <About/>
+      <Suspense fallback = {<div> Please Wait ... </div>} >
+        <About/>
+      </Suspense>
     </div>
   );
 }

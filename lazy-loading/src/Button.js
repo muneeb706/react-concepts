@@ -1,4 +1,4 @@
-import propTypes from "prop-types";
+import React from "react";
 
 function Button({
   children,
@@ -10,7 +10,7 @@ function Button({
   outline,
   rounded,
 }) {
-  return <button>{children}</button>;
+  return <button className="bg-red-500">{children}</button>;
 }
 
 // TODO: Use TS instead of prop types

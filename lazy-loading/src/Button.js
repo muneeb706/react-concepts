@@ -1,4 +1,8 @@
 import React from "react";
+import className from 'classnames';
+
+
+
 
 function Button({
   children,
@@ -10,7 +14,12 @@ function Button({
   outline,
   rounded,
 }) {
-  return <button className="bg-red-500">{children}</button>;
+
+  return (
+    <button className="px-3 py-1.5 border border-blue-500 bg-blue-500 text-white">
+      {children}
+    </button>
+  );
 }
 
 // TODO: Use TS instead of prop types
